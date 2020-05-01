@@ -1,7 +1,7 @@
 ﻿// O2CUBE-OOP-STUDY_MineSweeper.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-// 지뢰찾기 구현
+// 2020.04.21 지뢰찾기 구현
+// 2020.04.28 클래스 분할
 #include <iostream>
-//#include <time.h>
 #include <ctime>
 #include "Utils.h"
 
@@ -391,6 +391,9 @@ public:
 	// 게임 진행
 	void GameLoop()
 	{
+		isPlaying = true;
+		isGameOver = false;
+
 		while (isPlaying) {
 			DrawScreen();
 			GetMouseButtonDown();

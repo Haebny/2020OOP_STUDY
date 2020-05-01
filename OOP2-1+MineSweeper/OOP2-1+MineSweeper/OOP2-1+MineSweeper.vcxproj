@@ -153,9 +153,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Mines.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Mines.cpp" />
     <ClCompile Include="OOP2-1+MineSweeper.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
